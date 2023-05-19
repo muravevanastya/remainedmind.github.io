@@ -1,0 +1,67 @@
+/* style.css */
+body{
+    bgcolor: "lightyellow";
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+p{
+    text-align: right;
+    color: red;
+    
+}
+
+div.flex{
+    align: left;
+    display: flex;
+    background-color: green;
+    justify-content: space-between;
+    padding: 10px;
+    border: thin outset gray;
+    margin: 0px 20px;
+    box-shadow: 1px 10px 10px 1px rgba(100, 100, 1, 0.5);
+}
+
+hr.footer{
+    border-top: 1px solid grey;
+}
+
+footer{
+    align-text: center;
+    align: center;
+    display: flex;
+    justify-content: space-between;
+    box-shadow:
+        inset rgba(0, 0, 0, 0.35) 0px -20px 20px -20px,
+        inset rgba(0, 0, 0, 0.35) 0px 20px 20px -20px;
+    padding: 10px;
+    border: 0 inset grey;
+    border-radius: 0 0 10px 10px;
+
+    margin: 0px;
+}
+
+p.footer{
+    text-align: center;
+    color: grey;
+    padding: 10px;
+}
+
+p.button{
+    text-align: center;
+    color: grey;
+    padding: 10px;
+    border: 1px outset grey;
+    box-shadow:
+        inset rgba(0, 0, 0, 0.35) 0px 1px 1px 1px,
+        inset rgba(0, 0, 0, 0.35) 0px 1px 1px -1px;
+/*    margin: 0 0 0 40%;*/
+}
+
+
+a.button{
+    text-decoration: none;
+}
