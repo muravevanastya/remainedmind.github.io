@@ -1,18 +1,52 @@
 /* style.css */
 body{
-    bgcolor: "lightyellow";
+    background-color: rgba(10, 1, 100, 0.4);
 }
+
+iframe{
+    float: right;
+    opacity: 0.85;
+/*    overflow: "scroll";*/
+    width: 540px;
+    height: 360px;
+/*    width: 60%;*/
+    frameborder: "1";
+    padding: 10px;
+    margin: 20px 20px  20px 20px;
+    border: 1 inset grey;
+    border-radius: 4px;
+
+}
+
 
 h1 {
     color: navy;
     margin-left: 20px;
 }
 
+section.simple{
+    padding: 10px 10px;
+}
+
+section{
+    text-align: left;
+/*    display: flex;*/
+    /*    background-color: green;*/
+    justify-content: space-between;
+
+    /*    border: thin outset gray;*/
+    margin: 20px 20px;
+    /*    box-shadow: 1px 10px 10px 1px rgba(100, 100, 1, 0.5);*/
+}
+
+
 p{
     text-align: right;
     color: red;
-    
+
 }
+
+
 
 div.flex{
     align: left;
@@ -22,7 +56,25 @@ div.flex{
     padding: 10px;
     border: thin outset gray;
     margin: 0px 20px;
-    box-shadow: 1px 10px 10px 1px rgba(100, 100, 1, 0.5);
+    box-shadow: 1px 10px 10px 1px ;
+}
+
+div.horizontal_flex{
+    align: justify;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px 20px 0px 0px;
+    box-shadow: 1px 10px 10px 1px ;
+}
+
+div.bio{
+    align: justify;
+/*    display: flex;*/
+    background-color: rgba(1, 100, 1, 0.5);
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
 }
 
 hr.footer{
@@ -51,6 +103,7 @@ p.footer{
 }
 
 p.button{
+    background-color: rgba(200, 0, 0, 1);
     text-align: center;
     color: grey;
     padding: 10px;
@@ -61,6 +114,13 @@ p.button{
 /*    margin: 0 0 0 40%;*/
 }
 
+p.bio{
+    text-align: justify;
+    color: black;
+/*    margin: 20px;*/
+/*    float: left;*/
+/*    width: 40%;*/
+}
 
 a.button{
     text-decoration: none;
