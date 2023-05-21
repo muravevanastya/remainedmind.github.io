@@ -14,7 +14,7 @@ nav ul {
 nav li {
     margin: 0px;
     padding: 2px;
-    width: 25%; /* MANUALLY */
+    width: 25%; /* CALCULATED MANUALLY */
 }
 
 nav p{
@@ -31,16 +31,17 @@ nav p{
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
 }
 
-nav a:hover {  /* pseudo-class applied when the mouse cursor is over element. */
-    color: #000;
+nav p:hover {  /* pseudo-class applied when the mouse cursor is over element. */
+    color: rgba(0, 100, 0, 1);
+    background-color: rgba(100, 0, 0, 0.5)
 }
 
 nav li.active p {
-    background-color: rgba(200, 0, 0, 0.5);
+    background-color: rgba(200, 0, 0, 0.2);
 }
 
 iframe{
@@ -80,11 +81,11 @@ section{
 }
 
 
-p{
-    text-align: right;
-    color: red;
+/*p{*/
+/*    text-align: right;*/
+/*    color: red;*/
 
-}
+/*}*/
 
 
 
@@ -99,14 +100,7 @@ div.flex{
     box-shadow: 1px 10px 10px 1px ;
 }
 
-div.horizontal_flex{
-    align: justify;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px;
-    margin: 0px 20px 0px 0px;
-    box-shadow: 1px 10px 10px 1px ;
-}
+
 
 div.bio{
     align: justify;
@@ -117,42 +111,7 @@ div.bio{
     margin: 0px;
 }
 
-hr.footer{
-    border-top: 1px solid grey;
-}
 
-footer{
-    align-text: center;
-    align: center;
-    display: flex;
-    justify-content: space-between;
-    box-shadow:
-        inset rgba(0, 0, 0, 0.35) 0px -20px 20px -20px,
-        inset rgba(0, 0, 0, 0.35) 0px 20px 20px -20px;
-    padding: 10px;
-    border: 0 inset grey;
-    border-radius: 0 0 10px 10px;
-
-    margin: 0px;
-}
-
-p.footer{
-    text-align: center;
-    color: grey;
-    padding: 10px;
-}
-
-p.button{
-/*    background-color: rgba(200, 0, 0, 1);*/
-    text-align: center;
-    color: grey;
-    padding: 10px;
-    border: 1px outset grey;
-    box-shadow:
-        inset rgba(0, 0, 0, 0.35) 0px 1px 1px 1px,
-        inset rgba(0, 0, 0, 0.35) 0px 1px 1px -1px;
-    margin: 0 0 0 0;
-}
 
 p.bio{
     text-align: justify;
@@ -164,4 +123,147 @@ p.bio{
 
 a.button{
     text-decoration: none;
+}
+
+table.social{
+
+/*    border: 1px solid black;*/
+/*    background-color: green;*/
+    margin: 20px;
+/*    justify-content: space-between;*/
+/*    justify: center;*/
+
+}
+table.social tr{
+/*    display: flex;*/
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+table.social td{
+    margin: 0 20px;
+    text-align: center;
+}
+/*table.social p{*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*}*/
+/*table.social a{*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*}*/
+
+table.social img{
+    display: block;
+    border: 2px solid rgba(0, 0, 0, 1);
+    margin: auto;
+}
+
+/*table.social img:hover {  !* pseudo-class applied when the mouse cursor is over element. *!*/
+/*    color: rgba(0, 100, 0, 1);*/
+/*    background-color: rgba(100, 0, 0, 0.5)*/
+/*}*/
+
+
+
+hr.footer{
+    border-top: 1px solid grey;
+}
+
+footer{
+    align-text: center;
+    align: center;
+    display: flex;
+    justify-content: space-around;
+    box-shadow:
+        inset rgba(0, 0, 0, 0.35) 0px -20px 20px -20px,
+        inset rgba(0, 0, 0, 0.35) 0px 20px 20px -20px;
+    padding: 10px;
+    border: 0 inset grey;
+    border-radius: 0 0 10px 10px;
+
+    margin: 0px;
+}
+
+
+p.footer{
+    text-align: center;
+    color: grey;
+    padding: 10px;
+}
+
+
+p.button{
+    background-color: rgba(80, 0, 80, 0.1);
+    text-align: center;
+    color: grey;
+    padding: 10px;
+    border: 1px outset grey;
+/*    box-shadow:*/
+/*        inset rgba(0, 0, 0, 0.35) 0px 1px 1px 1px,*/
+/*        inset rgba(0, 0, 0, 0.35) 0px 1px 1px -1px;*/
+}
+
+p.button:hover {
+    background: rgba(80, 0, 80, 0.05);
+}
+
+section.feedback{
+
+}
+
+form {
+    font-family: 'Arial';
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 60px;
+    margin: 10px 100px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+/*    width: 100%;*/
+}
+
+div.horizontal_flex{
+    align: justify;
+    display: flex;
+/*    align-items: center;*/
+    justify-content: center;
+/*    justify-content: space-between;*/
+    width: 100%;
+    margin: 15px 0 0 0;
+
+}
+
+button{
+    padding: 7px 30px;
+    margin: 10px;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+form button:hover {  /* pseudo-class applied when the mouse cursor is over element. */
+    background: rgba(0, 0, 0, 0.15);
+}
+
+input{
+    margin: 5px 0;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    width: 100%;
+    height: 30px;
+
+}
+textarea {
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    width: 100%;
 }

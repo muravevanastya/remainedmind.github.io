@@ -9,10 +9,10 @@
 
 <nav>
   <ul>
-    <li><p class="button"><a class="button" href="index.html">Main</a></p></li>
-    <li><p class="button"><a class="button" href="about.html">About me</a></p></li>
-    <li><p class="button"><a class="button" href="social_links.html">Social links</a></p></li>
-    <li class="active"><p class="button"><a class="button" href="contact-form.html">Contact me</a></p></li>
+    <li><a href="index.html"><p>Main</p></a></li>
+    <li><a href="about.html"><p>About me</p></a></li>
+    <li><a href="social_links.html"><p>Social links</p></a></li>
+    <li class="active"><a class="button" href="contact-form.html"><p>Contact me</p></a></li>
   </ul>
 </nav>
 
@@ -20,23 +20,45 @@
     <h1 align="center"><font color="darkblue">CONTACT ME</font></h1>
     <h2 align="center"><font color="red">YOU CAN LEAVE ME A MESSAGE</font></h2>
     <p> <font size="3">Please fill out this form</font></p>
-    <form method="post">
-        <p><br>
-        <b>Name</b>: <input type="text" name="fname" size="25"><br><br>
-        </p>
 
-        <b>Email</b>: <input type="email" name="email"> <br><br>
-        <b>Subject</b>: <input type="text" name="subject" size="25"><br><br>
 
-        <p><label><strong>Message:</strong><br></label>
-        <textarea name="message" rows="4" cols="36" scrolling="auto"></textarea>
-        </p>
-        <p align="center">
-            <input type="submit" value="Submit Your Entries">
-            <input type="reset" value="Clear Your Entries">
-        </p>
+
+<!-- We use third-party submission service which redirects this request to my e-mail-->
+<section class="feedback">
+    <form action="https://formspree.io/f/xoqzzaop" method="POST" target="_blank">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" scrolling="auto" required></textarea>
+
+
+    <div class="horizontal_flex">
+    <button type="submit">Send</button>
+    <button type="reset">Reset</button>
+
+    </div>
 
     </form>
+</section>
+
+
+
+<div align="center">
+<p><i>For further info, Please send e-mail to: </i><a href="mailto:lemoonadresse@gmail.com">Anatolii Dubinka</a></p>
+</div>
+
+
+
+<footer>
+<p class="footer">&copy; 2023. Anatolii Dubinka</p>
+<a class="button" href="#top"><p class="button">Back to Top</p></a>
+
+</footer>
 
 </body>
 </html>
