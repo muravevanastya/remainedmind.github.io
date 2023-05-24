@@ -56,7 +56,8 @@ nav li.active p {
 
 div.white_block_centered{
     display: flex;
-    flex-direction: row;
+/*    flex-direction: row;*/
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 40px 20px 80px 20px;
@@ -69,6 +70,8 @@ div.white_block_centered{
 ul.favs{
     margin-left: 0;
     padding-left: 0;
+/*    margin-right: 0;*/
+/*    padding-right: 0;*/
     list-style-type: none;
 /*    margin: 0px, 0px;*/
 /*    padding: 0px, 0px;*/
@@ -107,9 +110,9 @@ ul.books li:nth-child(2n) {
 
 
 ul.dark{
-    text-align: center;
+/*    text-align: center;*/
 /*    text-align: justify;*/
-    align-self: center;
+/*    align-self: center;*/
     /*    display: flex;*/
 /*    flex-direction: row;*/
     align-items: center;
@@ -148,6 +151,52 @@ ul.dark li:nth-child(2n) {
 /*    background: rgba(150, 150, 150, 1);*/
     background: rgba(5, 5, 5, 1);
     color: rgba(250, 250, 250, 1);
+    border: 0;
+    padding: 5px 40px;
+
+}
+
+
+
+ul.work_experience{
+    text-align: center;
+    align-self: center;
+    /*    font-size: 1.5rem;*/
+    list-style-type: none;
+    padding-inline-start: 0px;
+/*    border: 5px solid rgba(229, 229, 229, 1);*/
+/*    border-radius: 5px;*/
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul.experience_field{
+    text-align: justify;
+    align-self: center;
+    /*    font-size: 1.5rem;*/
+    list-style-type: none;
+    padding-inline-start: 0px;
+/*    border: 5px solid rgba(229, 229, 229, 1);*/
+/*    border-radius: 5px;*/
+
+}
+
+
+
+ul.experience_field li{
+    /*    background-color: rgba(255, 200, 0, 1);*/
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 10px solid rgba(229, 229, 229, 1);
+
+    padding: 10px 30px;
+
+}
+
+ul.experience_field li:nth-child(2n) {
+    background: rgba(229, 229, 229, 1);
     border: 0;
     padding: 5px 20px;
 }
@@ -264,8 +313,10 @@ h1{
     text-transform: uppercase;
 }
 h2{
-    color: navy;
-    margin: 20px;
+    color: black;
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 h3{
