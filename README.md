@@ -1,2 +1,2 @@
 # remainedmind.github.io
-Personal Website
+My fisrt (and the last, haha) Website, which is about me.
