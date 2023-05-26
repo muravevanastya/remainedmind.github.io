@@ -226,9 +226,10 @@ ul.experience_field li:nth-child(2n) {
 }
 
 
+ul.experience_field a{
+    color: black;
 
-
-
+}
 
 
 
@@ -424,6 +425,15 @@ h4{
     margin-bottom: 20px;
 
 /*    width: 250px;*/
+}
+h5{
+    color: black;
+    align-self: center;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+
+    /*    width: 250px;*/
 }
 
 span{
@@ -667,35 +677,47 @@ footer{
     align: center;
     display: flex;
     justify-content: space-around;
+
+/*    box-shadow:*/
+/*        inset rgba(0, 0, 0, 0.35) 0px -20px 20px -20px,*/
+/*        inset rgba(0, 0, 0, 0.35) 0px 20px 20px -20px;*/
+
     box-shadow:
-        inset rgba(0, 0, 0, 0.35) 0px -20px 20px -20px,
-        inset rgba(0, 0, 0, 0.35) 0px 20px 20px -20px;
-    padding: 20px 10px;
-    border: 0 inset grey;
-    border-radius: 0 0 10px 10px;
+        inset rgba(0, 0, 0, 0.35) 0px -15px 15px -15px,
+        inset rgba(0, 0, 0, 0.35) 0px 15px 15px -15px;
+    padding: 30px 10px;
+/*    border: 0 inset grey;*/
+/*    border-radius: 0 0 10px 10px;*/
 
-    margin: 50px 0 0 0;
+    margin: 0px 0 2px 0;
 }
 
 
-p.footer{
-    text-align: center;
-    color: grey;
-    padding: 10px;
-}
+/*p.footer{*/
+/*    text-align: center;*/
+/*    color: rgba(0, 0, 0, 0.5);*/
+/*    padding: 10px;*/
+/*}*/
 
 
-p.button{
-    background-color: rgba(80, 0, 80, 0.1);
-    text-align: center;
-    color: grey;
-    padding: 10px;
-    border: 1px outset grey;
-}
+/*p.button{*/
+/*    background-color: rgba(80, 0, 80, 0.1);*/
+/*    text-align: center;*/
+/*    color: grey;*/
+/*    padding: 10px;*/
+/*    border: 1px outset grey;*/
+/*}*/
 
-p.button:hover {
-    background: rgba(80, 0, 80, 0.05);
-}
+/*p.button:hover {*/
+/*    background: rgba(80, 0, 80, 0.05);*/
+/*}*/
+
+
+
+
+
+
+
 
 code {
     background-color: #eee;
@@ -705,4 +727,31 @@ code {
     padding: 0 3px;
     margin: 5px 0;
 /*    align-self: center;*/
+}
+
+footer a p{
+/*    background-color: rgba(250, 250, 250, 1);*/
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin: 0;
+    border: 0px;
+
+/*    background-color: rgba(250, 250, 250, 1);*/
+    background-color: rgba(255, 200, 0, 1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer a{
+    text-decoration: none;
+/*        color: rgba(0, 0, 0, 0.5);*/
+    font-weight: bold;
+}
+
+footer a p:hover {  /* pseudo-class applied when the mouse cursor is over element. */
+    /*    color: rgba(0, 100, 0, 1);*/
+    color: rgba(255, 200, 0, 1);
+    background-color: rgba(5, 5, 5, 1);
+    /*    background-color: rgba(100, 0, 0, 0.5)*/
 }
