@@ -15,6 +15,20 @@ body{
 
 }
 
+p.intro{
+    margin: 0px 40px 0 0;
+}
+
+p.greeting{
+    font-size: 19px;
+    text-align: justify;
+/*    margin: 60px 0 0 0;*/
+}
+
+a.white_link{
+    color: white;
+}
+
 nav ul {
     background-color: rgba(5, 5, 5, 1);
     background-color: rgba(255, 200, 0, 1);
@@ -642,11 +656,13 @@ button{
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    font-size: 12px;
 
 }
 
 form button:hover {  /* pseudo-class applied when the mouse cursor is over element. */
     background: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
 }
 
 input{
@@ -677,46 +693,12 @@ footer{
     align: center;
     display: flex;
     justify-content: space-around;
-
-/*    box-shadow:*/
-/*        inset rgba(0, 0, 0, 0.35) 0px -20px 20px -20px,*/
-/*        inset rgba(0, 0, 0, 0.35) 0px 20px 20px -20px;*/
-
     box-shadow:
         inset rgba(0, 0, 0, 0.35) 0px -15px 15px -15px,
         inset rgba(0, 0, 0, 0.35) 0px 15px 15px -15px;
     padding: 30px 10px;
-/*    border: 0 inset grey;*/
-/*    border-radius: 0 0 10px 10px;*/
-
     margin: 0px 0 2px 0;
 }
-
-
-/*p.footer{*/
-/*    text-align: center;*/
-/*    color: rgba(0, 0, 0, 0.5);*/
-/*    padding: 10px;*/
-/*}*/
-
-
-/*p.button{*/
-/*    background-color: rgba(80, 0, 80, 0.1);*/
-/*    text-align: center;*/
-/*    color: grey;*/
-/*    padding: 10px;*/
-/*    border: 1px outset grey;*/
-/*}*/
-
-/*p.button:hover {*/
-/*    background: rgba(80, 0, 80, 0.05);*/
-/*}*/
-
-
-
-
-
-
 
 
 code {
@@ -725,7 +707,7 @@ code {
     font-family: courier, monospace;
     font-size: large;
     padding: 0 3px;
-    margin: 5px 0;
+    margin: 5px 0 25px 0;
 /*    align-self: center;*/
 }
 
