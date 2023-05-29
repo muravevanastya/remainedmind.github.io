@@ -6,8 +6,7 @@
 </head>
 
 <body>
-
-<a name="top"></a>
+<header>
 <nav>
   <ul>
     <li><a href="index.html"><p>Home</p></a></li>
@@ -19,10 +18,11 @@
 
   </ul>
 </nav>
+</header>
 <h1>I'm open to Exciting Opportunities</h1>
-<section class="white_page">
+<section class="white_page_contact">
 <h2>REACH OUT TO ME</h2>
-<div class="horizontal_flex">
+<div class="horizontal_flex_contact">
 <div class="contacts">
 <p>SEND ME A MESSAGE </p>
 <a href="https://t.me/remainedmind" target="_blank"><img class="button" alt="Telegram" src="https://img.shields.io/badge/Telegram-blue?logo=telegram&logoColor=white&style=flat-square"></a>
@@ -40,37 +40,38 @@
 
 
 
-<!-- We use third-party submission service which redirects this request to my e-mail-->
-<!--<section class="feedback">-->
+<!-- I use third-party submission service which redirects this request to my e-mail-->
 
-    <form action="https://formspree.io/f/xoqzzaop" method="POST" target="_blank">
-    <h3>OR LEAVE ME A MESSAGE IN THIS FORM</h3>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+<form action="https://formspree.io/f/xoqzzaop" method="POST" target="_blank">
+<h3>OR LEAVE ME A MESSAGE IN THIS FORM</h3>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" scrolling="auto" required></textarea>
+<label for="message">Message:</label>
+<textarea id="message" name="message" scrolling="auto" required></textarea>
 
 
-    <div class="horizontal_flex">
-    <button type="submit">Send</button>
-    <button type="reset">Reset</button>
+<div class="horizontal_flex">
+<button type="submit">Send</button>
+<button type="reset">Reset</button>
 
-    </div>
+</div>
 
-    </form>
-<!--</section>-->
-
+</form>
 
 
 <footer>
-<p class="footer">&copy; 2023. Anatolii Dubinka</p>
-<a class="button" href="#top"><p class="button">Back to Top</p></a>
-
+<p>&copy; 2023. Anatolii Dubinka</p>
+<!--For #top bookmark, in HTML5 we don't need to create this link-->
+<a href="#top"><p>Back to Top</p></a>
 </footer>
+
+
+
+
 
 </body>
 </html>
