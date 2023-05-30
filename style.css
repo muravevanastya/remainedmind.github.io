@@ -31,6 +31,11 @@ h2{
     align-self: center;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 15px;
+}
+
+h2.form{
+    margin-top: 20px;
 }
 
 h3{
@@ -39,7 +44,7 @@ h3{
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 h4{
     color: black;
@@ -55,13 +60,19 @@ h5{
     align-self: center;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
     /*    width: 250px;*/
 }
 
 p{
     margin: 0px;
+}
+
+p.hobbies{
+    margin: 0px 20px;
+    text-align: justify;
 }
 
 div.white_block_centered{
@@ -71,7 +82,7 @@ div.white_block_centered{
     align-items: center;
     justify-content: center;
     padding: 0px 20px 20px 20px;
-    margin: 0px 120px 30px 120px;
+    margin: 20px 120px 30px 120px;
     background-color: rgba(250, 250, 250, 1);
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -79,12 +90,21 @@ div.white_block_centered{
 
 section.white_page{
     margin: 30px 0px;
-    padding: 40px 60px 60px 60px;
+    padding: 10px 60px 30px 60px;
     background-color: rgba(250, 250, 250, 1);
+}
+section.white_page h4{
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+section.white_page h2{
+/*    margin-bottom: 5px;*/
+    margin-top: 5px;
 }
 
 section.white_page_contact{
-    margin: 30px 0px 20px 0;
+    margin: 30px 0px 30px 0;
     padding: 10px 30px 10px 30px;
     background-color: rgba(250, 250, 250, 1);
 }
@@ -137,7 +157,9 @@ div.contacts p{
 
 p.intro{
 /*    margin: 0px 40px 0 0;*/
-    margin: 10px 40px 0 10px;
+/*    margin: 10px 40px 0 10px;*/
+    margin-left: 10px;
+    margin-right: 40px;
     align-self: center;
 }
 
@@ -268,7 +290,17 @@ ul.dark li:nth-child(2n) {
 
 
 
-ul.work_experience{
+/*ul.work_experience{*/
+/*    text-align: center;*/
+/*    align-self: center;*/
+/*    list-style-type: none;*/
+/*    padding-inline-start: 0px;*/
+/*    margin-top: 0;*/
+/*    margin-left: 0;*/
+/*    padding-left: 0;*/
+/*}*/
+
+ul.grey_list_headers{
     text-align: center;
     align-self: center;
     list-style-type: none;
@@ -276,25 +308,33 @@ ul.work_experience{
     margin-top: 0;
     margin-left: 0;
     padding-left: 0;
+    margin-bottom: 10px;
 }
 
-ul.experience_field{
+ul.grey_list_headers li.grey_list_headers:nth-child(2n){
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+ul.grey_list_headers h3{
+    margin-top: 0px;
+}
+
+ul.grey_list{
     text-align: justify;
     align-self: center;
     display: flex;
     flex-direction: column;
-    margin: 10px 20px;
+    margin: 0px 20px 0px 20px;
     list-style-type: none;
     padding-inline-start: 0px;
     border: 5px solid rgba(229, 229, 229, 1);
     border-radius: 5px;
-    margin-bottom: 60px;
 
 }
 
 
-
-ul.experience_field li{
+ul.grey_list li{
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -305,72 +345,14 @@ ul.experience_field li{
 
 }
 
-ul.experience_field li:nth-child(2n) {
+ul.grey_list li:nth-child(2n) {
     background: rgba(229, 229, 229, 1);
     border: 0;
     padding: 5px 40px;
 }
 
-
-ul.experience_field a{
+div.white_block_centered a{
     color: black;
-
-}
-
-
-
-
-ul.education{
-    text-align: center;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    /*    font-size: 1.5rem;*/
-    list-style-type: none;
-    padding-inline-start: 0px;
-        border: 5px solid rgba(229, 229, 229, 1);
-    border-radius: 5px;
-/*    margin-left: 0;*/
-/*    padding-left: 0;*/
-/*    padding: 10px 120px;*/
-}
-
-ul.education_field{
-    text-align: justify;
-/*    text-align: center;*/
-/*    align-self: center;*/
-    display: flex;
-    flex-direction: column;
-    /*    font-size: 1.5rem;*/
-    margin: 10px 20px;
-/*    padding: 0px 10px;*/
-    list-style-type: none;
-    padding-inline-start: 0px;
-    border: 5px solid rgba(229, 229, 229, 1);
-    border-radius: 5px;
-
-}
-
-
-
-ul.education_field li{
-    /*    background-color: rgba(255, 200, 0, 1);*/
-/*    text-align: left;*/
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
-/*    justify-content: space-between;*/
-    border: 10px solid rgba(229, 229, 229, 1);
-/*    border-radius: 5px;*/
-    padding: 10px 30px;
-
-}
-
-ul.education_field li:nth-child(2n) {
-    background: rgba(229, 229, 229, 1);
-    border: 0;
-/*    padding: 5px 40px;*/
 }
 
 div.black_block_centered{
@@ -387,7 +369,6 @@ div.black_block_centered{
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-
 
 div.black_block_spaced{
     display: flex;
@@ -416,7 +397,9 @@ section.white_page_centered{
 }
 
 
-
+div.date_place{
+    margin-bottom: 10px;
+}
 
 
 
@@ -555,6 +538,12 @@ div.black_block li{
 }
 
 
+/*div.white_block_centered img, p{*/
+/*    margin-top: 20px;*/
+/*}*/
+div.white_block_centered .intro{
+    margin-top: 20px;
+}
 
 
 img {
