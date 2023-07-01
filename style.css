@@ -88,8 +88,8 @@ div.white_block_centered{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0px 20px 20px 20px;
-    margin: 20px 120px 30px 120px;
+    padding: 0px 28px 20px 28px;
+    margin: 20px 252px 30px 252px;
     background-color: rgba(250, 250, 250, 1);
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -154,6 +154,8 @@ p.intro{
     margin-left: 10px;
     margin-right: 40px;
     align-self: center;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 p.greeting{
