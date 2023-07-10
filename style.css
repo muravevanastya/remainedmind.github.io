@@ -301,16 +301,13 @@ ul.grey_list li{
     justify-content: space-between;
     border: 10px solid rgba(229, 229, 229, 1);
     padding: 10px 30px;
+    font-size: 16px;
 }
 
 ul.grey_list li:nth-child(2n) {
     background: rgba(229, 229, 229, 1);
     border: 0;
     padding: 5px 40px;
-}
-
-ul.grey_list p {
-  font-size: 16px;
 }
 
 div.white_block_centered a{
